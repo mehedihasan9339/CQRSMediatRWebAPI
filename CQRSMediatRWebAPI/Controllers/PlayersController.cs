@@ -17,7 +17,6 @@ namespace CQRSMediatRWebAPI.Controllers
             _mediator = mediator;
         }
 
-        // GET api/players
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Player>>> Get()
         {
@@ -26,7 +25,6 @@ namespace CQRSMediatRWebAPI.Controllers
             return Ok(players);
         }
 
-        // GET api/players/{id}
         [HttpGet("{id}")]
         public async Task<ActionResult<Player>> Get(int id)
         {
@@ -36,7 +34,6 @@ namespace CQRSMediatRWebAPI.Controllers
             return Ok(player);
         }
 
-        // POST api/players
         [HttpPost]
         public async Task<ActionResult<int>> Post([FromBody] CreatePlayerCommand command)
         {
@@ -44,7 +41,6 @@ namespace CQRSMediatRWebAPI.Controllers
             return CreatedAtAction(nameof(Get), new { id = playerId }, playerId);
         }
 
-        // PUT api/players/{id}
         [HttpPut("{id}")]
         public async Task<IActionResult> Put(int id, [FromBody] UpdatePlayerCommand command)
         {
@@ -53,7 +49,6 @@ namespace CQRSMediatRWebAPI.Controllers
             return NoContent();
         }
 
-        // DELETE api/players/{id}
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {

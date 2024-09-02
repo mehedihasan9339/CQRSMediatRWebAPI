@@ -1,7 +1,6 @@
 ﻿using CQRSMediatRWebAPI.Commands;
 using CQRSMediatRWebAPI.Data;
 using CQRSMediatRWebAPI.Exceptions;
-using CQRSMediatRWebAPI.Models;
 using MediatR;
 
 namespace CQRSMediatRWebAPI.Handlers
@@ -21,7 +20,6 @@ namespace CQRSMediatRWebAPI.Handlers
 
             if (player == null)
             {
-                // Handle the case where the player is not found
                 throw new NotFoundException("Player not found");
             }
 
