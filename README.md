@@ -30,8 +30,8 @@ This project demonstrates how to implement the CQRS (Command Query Responsibilit
 
 ### NuGet Packages
 
-- `MediatR` - `9.1.1` (or latest version)
-- `MediatR.Extensions.Microsoft.DependencyInjection` - `11.0.0` (or latest version)
+- `MediatR` - `10.0.0` (or latest version)
+- `MediatR.Extensions.Microsoft.DependencyInjection` - `10.0.0` (or latest version)
 - `Microsoft.EntityFrameworkCore.InMemory` - `8.0.0` (or latest version)
 
 ## Setup Instructions
